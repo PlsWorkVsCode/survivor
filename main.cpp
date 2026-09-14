@@ -24,6 +24,7 @@ void keyboard();
 int main(){
     InitWindow(screen_width, screen_height, "My Pong Game!");
     SetTargetFPS(60);
+    set_menu(&player1);
     while(WindowShouldClose() == false){
         BeginDrawing();
         Vector2 mouse_position = GetMousePosition();

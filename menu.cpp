@@ -1,5 +1,7 @@
 #include "menu.h"
-
+void set_menu(player * player1){
+    upgrade_player1 = new upgrade_player(player1);
+}
 void menu(Vector2 mouse_position, player * player1, bool * menu_on, enemy_spawner * enemy_spawner1){
     if(player1->experience >= player1->experience_amount){
         upgrade_player1->update(mouse_position, player1);

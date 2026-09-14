@@ -1,5 +1,6 @@
 #include "button.h"
 #include "player.h"
+#include <random>
 #pragma once
 
 class upgrade_player{
@@ -9,7 +10,7 @@ class upgrade_player{
         * more_cannon_balls, * faster_cannon_ball_cooldown;
     vector<button*> button_list;
     int first_button, second_button, third_button;
-    upgrade_player();
+    upgrade_player(player * player1);
     void update(Vector2 mouse_position, player * player1);
     void refresh_buttons();
     void draw();

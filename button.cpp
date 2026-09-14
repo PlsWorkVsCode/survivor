@@ -10,6 +10,12 @@ float text_width){
     this->text = text;
     this->text_width = text_width;
 }
+
+void button::click() {
+    if (onClick) {
+        onClick(); // Execute the custom behavior
+    }
+}
  
 bool button::update(Vector2 mouse_position){
     if(CheckCollisionPointRec(mouse_position, {this->x_position, this->y_position, this->width, this->height})){

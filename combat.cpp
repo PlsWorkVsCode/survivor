@@ -3,7 +3,6 @@
 void combat(player * player1, enemy_spawner *enemy_spawner1){
     enemy_spawner1->update(player1->x, player1->y, player1);
     double arrow_number = 1;
-//
     double player_movement_x = 0, player_movement_y = 0;
     if(player1->dashing){
         player1->dash();
